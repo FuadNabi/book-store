@@ -4,8 +4,8 @@ const Book = ({ book }) => {
     <div className="books-container">
       <div className="book-info">
         <h4 className="book-category">Economy</h4>
-        <h2 className="book-name">{book.title}</h2>
-        <p className="book-author">{book.author}</p>
+        <h2 className="book-name">{title}</h2>
+        <p className="book-author">{author}</p>
         <div className="book-buttons-container">
           <button type="button" className="book-button">Comments</button>
           <button type="button" className="book-button">Remove</button>
