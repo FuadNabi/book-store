@@ -1,9 +1,8 @@
-import { useState } from 'react';
 import AddBook from '../components/AddBook';
 import Book from '../components/Book';
 
 const Home = () => {
-  const [books] = useState([
+  const books = [
     {
       id: 0,
       title: 'The Hunger Games',
@@ -14,7 +13,7 @@ const Home = () => {
       title: 'Dune',
       author: 'Frank Herbet',
     },
-  ]);
+  ];
 
   return (
     <>
