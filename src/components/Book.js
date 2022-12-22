@@ -7,7 +7,7 @@ const Book = ({
   const dispatch = useDispatch();
 
   return (
-    <div className="books-container">
+    <div className="book-container">
       <div className="book-info">
         <h4 className="book-category">{category}</h4>
         <h2 className="book-name">{title}</h2>
@@ -19,13 +19,19 @@ const Book = ({
         </div>
       </div>
       <div className="progress-container">
-        <div className="circular-progress-bar" />
-        <div className="completed">
-          <p>0%</p>
-          <p>Completed</p>
+        <div className="circular-progress-bar">
+          <div className="circular-progress" />
         </div>
-        <div className="current-chapter">Chapter 0</div>
-        <button type="button" className="update-progress-button">Update Progress</button>
+        <div className="completed">
+          <p className="complete-precent">75%</p>
+          <p className="completed">Completed</p>
+        </div>
+        <div className="progress-devider" />
+        <div className="chapter-container">
+          <div className="current-chapter">Current Chapter</div>
+          <div className="chapter">Chapter 14</div>
+          <button type="button" className="update-progress-button">Update Progress</button>
+        </div>
       </div>
     </div>
   );
