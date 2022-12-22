@@ -27,10 +27,10 @@ const AddBook = () => {
           e.target.reset();
         }}
       >
-        <input type="text" name="title" placeholder="Book Title" onChange={(e) => inputValue(e)} required />
-        <input type="text" name="author" placeholder="Author" onChange={(e) => inputValue(e)} required />
-        <input type="text" name="category" placeholder="Category" onChange={(e) => inputValue(e)} required />
-        <button type="submit">Add Book</button>
+        <input type="text" name="title" placeholder="Book Title" className="add-book-input" onChange={(e) => inputValue(e)} required />
+        <input type="text" name="author" placeholder="Author" className="add-book-input" onChange={(e) => inputValue(e)} required />
+        <input type="text" name="category" placeholder="Category" className="add-book-input" onChange={(e) => inputValue(e)} required />
+        <button className="submit-btn" type="submit">Add Book</button>
       </form>
     </div>
   );
