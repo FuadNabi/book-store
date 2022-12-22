@@ -21,6 +21,7 @@ const AddBook = () => {
     <div className="form-container">
       <h3 className="add-book-title">ADD NEW BOOK</h3>
       <form
+        className="d-flex"
         onSubmit={(e) => {
           e.preventDefault();
           dispatch(addBook(book));
